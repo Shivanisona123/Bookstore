@@ -8,21 +8,22 @@ const navigate = useNavigate();
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer transition transform hover:scale-105 duration-300">
-      {/* Image */}
-      {/* <img
+      {/* Image
+      <img
         src={item.coverImage}
         alt={item.title}
         className="w-full h-64 object-cover"
       /> */}
-<img
-  src={item.coverImage}
+      <img
+  src={item.coverImage || item.image}
   alt={item.title}
   className="w-full h-64 object-cover"
-  onError={(e) => {
-    e.target.src =
-      "https://images.unsplash.com/photo-1544717305-2782549b5136?w=400";
-  }}
-/>
+   />
+
+<p className="text-sm text-gray-600">
+  {item.author || item.auther}
+</p>
+
       {/* Content */}
       <div className="p-5">
         {/* Title */}
