@@ -8,22 +8,13 @@ const navigate = useNavigate();
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer transition transform hover:scale-105 duration-300">
-      {/* Image
+      
       <img
-        src={item.coverImage}
+        src={item.coverImage || item.image}
         alt={item.title}
         className="w-full h-64 object-cover"
-      /> */}
-      <img
-  src={item.coverImage || item.image}
-  alt={item.title}
-  className="w-full h-64 object-cover"
-   />
-
-<p className="text-sm text-gray-600">
-  {item.author || item.auther}
-</p>
-
+      />
+      
       {/* Content */}
       <div className="p-5">
         {/* Title */}
