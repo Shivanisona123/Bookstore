@@ -17,7 +17,7 @@ const course = location.state;
  const onSubmit = async (data) => {
   try {
    await axios.post(
-  "http://localhost:4001/purchase/buy",
+   "https://bookstore-backend-mvmb.onrender.com/purchase/buy",
   {
     ...data,
     courseTitle: course?.title,

@@ -17,10 +17,10 @@ function Contact() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post(
-        "http://localhost:4001/contact/send",
-        data
-      );
+  const res = await axios.post(
+    "https://bookstore-backend-mvmb.onrender.com/contact/send",
+    data
+  );
 
       toast.success(res.data.message);
 
